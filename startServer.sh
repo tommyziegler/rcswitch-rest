@@ -1,4 +1,4 @@
 #!/bin/bash
 #
 # 
-nohup node server.js > /tmp/rcswitch-rest.log &
+nohup /opt/node/bin/node server.js > /tmp/rcswitch-rest.log &
