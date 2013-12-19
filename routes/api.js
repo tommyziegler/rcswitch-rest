@@ -46,6 +46,30 @@ var data = [
       "id": "11", "url": "/switches/11", "name": "Switch 12 (Rev: A 3)", "product": "Rev", "script": "A", "command": 3, "status": "0"
     }
   ];
+  
+var existDataToLoad = function() {
+    return true;
+}
+
+var functionLoadData = function() {
+    return [
+    {
+      "id": "0", "url": "/switches/0", "name": "Switch 1 (00000 A)", "product": "Elro", "script": "00000", "command": "A", "status": "0"
+    }];
+    
+}
+
+var functionSaveData = function() {
+    
+    
+}
+
+if(existDataToLoad() == true) {
+    data = functionLoadData();
+} else {
+    functionSaveData();
+}
+
 
 // GET
 exports.switches = function (req, res) {
